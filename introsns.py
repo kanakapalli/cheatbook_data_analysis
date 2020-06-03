@@ -7,15 +7,17 @@ height = [1,5,7,8,9,5,4,34]
 weight = [65,56,4,6,7,4,8,55]
 
 df = pd.read_csv("C:/Users/kanak/OneDrive/Desktop/data/googleplaystore.csv")
-# print(df.head())
+
+# DATA VISUVALIZATION
+
 # scatterplot
-# sns.scatterplot(x=height,y=weight)
+sns.scatterplot(x=height,y=weight)
 
 # count plot
-# sns.countplot(x=height)
+sns.countplot(x=height)
 
 # for data frame
-# sns.countplot(x="Category", data=df)
+sns.countplot(x="Category", data=df)
 
 palette_colors = {"Rural": "green", "Urban": "blue"}
 
@@ -24,18 +26,22 @@ sns.countplot(x="Category", data=df, col="Rating")
 plt.show()
 
 
-#data seeing
+# DATA SEEING
+# use print()
 df.head() # to see top 5
 df.head(10) # to see top 10
 df.tail() # to see last 5
 df.tail(10) # to see last 10
 df[10470:10475] # to see from given index
 
+# to see index 
+df.index
 
 
 
 
-# data cleaning 
+
+# DATA CLEANING 
 
 # note : df.col and df["col"] both are same
 
